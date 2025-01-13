@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const errorController = require('./controllers/error');
 
 const app = express();
-
+db.execute('SELECT * FROM person').then().catch();
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
